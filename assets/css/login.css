@@ -1,0 +1,141 @@
+.main {
+	height: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.main-login {
+	background: #fff;
+	width: 300px;
+	border-radius: 20px;
+	transition: 0.5s;
+	filter: drop-shadow(0px 2px 6px #0005);
+}
+
+.login-header {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background: #fff;
+	border-bottom: solid 1px #ddd;
+	width: 100%;
+	height: 40px;
+}
+
+.login {
+	padding-left: 8px;
+	position: relative;
+	border-top-left-radius: 20px;
+	background: #fff;
+	border-right: solid 1px #ddd;
+	width: 50%;
+	height: 39px;
+	float: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #444;
+	font-size: 18px;
+}
+
+.sign-up {
+	padding-right: 8px;
+	position: relative;
+	border-top-right-radius: 20px;
+	background: #fff;
+	width: 50%;
+	height: 39px;
+	float: left;
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #444;
+	font-size: 18px;
+}
+
+.login:hover,
+.sign-up:hover {
+	background: #ddd;
+}
+
+.login-main,
+.signup-main {
+	transition: 1s;
+}
+
+.username,
+.password,
+.email {
+	color: #111;
+	width: 96%;
+	text-align: left;
+	padding-left: 4%;
+	margin-top: 30px;
+}
+
+h {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+input {
+	width: 250px;
+	height: 40px;
+	border: none;
+	outline: none;
+	color: #444;
+	padding-left: 10px;
+	border-radius: 20px;
+	border-top-left-radius: 0px;
+	background-color: #ddd;
+	font-size: 16px;
+}
+
+input:focus {
+	border: solid 2px #bbb;
+	width: 246px;
+	height: 36px;
+	padding-left: 8px;
+}
+.login-main form {
+	margin-bottom: 20px;
+}
+.submit {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.lisub,
+.susub {
+	width: 100px !important;
+	height: 40px !important;
+	background-color: #77f;
+	border: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 0 !important;
+}
+
+.lisub:hover,
+.susub:hover {
+	background-color: #88f;
+}
+
+.lisub:active,
+.susub:active {
+	background-color: #99f;
+}
+
+#logged_in {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	font-family: cursive, roboto, sans serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #0000;
+	transition: 0.5s;
+}
