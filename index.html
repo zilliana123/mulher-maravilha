@@ -1,172 +1,191 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Mulher Maravilha</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <head>
+    <title>Mulher Maravilha</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper-->
-			<div id="wrapper">
-
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Início</span></a>
-						<a href="#emergency" class="icon solid fa-triangle-exclamation"><span>Emergência</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<!--a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper-->
+    <div id="wrapper">
+      <!-- Nav -->
+      <nav id="nav">
+        <a href="#" class="icon solid fa-home"><span>Início</span></a>
+        <a href="#emergency" class="icon solid fa-triangle-exclamation"
+          ><span>Emergência</span></a
+        >
+        <a href="#work" class="icon solid fa-folder"><span>Jornada</span></a>
+        <!--a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a-->
-					</nav>
+      </nav>
 
-				<!-- Main -->
-					<div id="main">
+      <!-- Main -->
+      <div id="main">
+        <!-- Me -->
+        <article id="home" class="panel intro">
+          <header>
+            <h1>Olá, <span id="nome"></span></h1>
+            <p>É um lindo dia para renovar sua vida</p>
+          </header>
+          <a href="#work" class="jumplink pic">
+            <div class="work-text">
+              <p>See my work</p>
+            </div>
+            <span class="arrow icon solid fa-chevron-right"></span>
+            <img src="images/me.jpg" alt="" />
+          </a>
+        </article>
 
-						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Olá, <span id="nome"></span></h1>
-									<p>É um lindo dia para renovar sua vida</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<div class="work-text">
-										<p>See my work</p>
-									</div>
-									<span class="arrow icon solid fa-chevron-right"></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+        <!-- Emergency -->
+        <article id="emergency" class="panel">
+          <header>
+            <h2>Emergência</h2>
+          </header>
+          <p id="emergencyText" class="text-center">
+            Sinto muito que tenha sido necessário recorrer a isso... Mas se
+            concentre nos próximos passos para se recuperar o quanto antes
+          </p>
+          <p class="text-center">
+            <button id="emergency-start" class="btn btn-primary btn-lg">
+              Começar
+            </button>
+          </p>
+          <section id="emergencyBreathing" class="d-none">
+            <div id="breathing-button"></div>
+            <p class="text-center">
+              Quando se sentir mais calma clique no botão abaixo para fazermos
+              um exercício de relaxamento
+            </p>
+            <p class="text-center">
+              <a
+                href="https://www.youtube.com/watch?v=3SNBbazu4G4"
+                id=""
+                target="_blank"
+                class="btn btn-primary btn-lg"
+                >Vamos Lá!</a
+              >
+            </p>
+          </section>
+        </article>
 
-						<!-- Emergency -->
-							<article id="emergency" class="panel">
-								<header>
-									<h2>Emergência</h2>
-								</header>
-								<p id="emergencyText" class="text-center">
-									Sinto muito que tenha sido necessário recorrer a isso...
-									Mas se concentre nos próximos passos para se recuperar o quanto antes
-								</p>
-								<p class="text-center">
-									<button id="emergency-start" class="btn btn-primary btn-lg">Começar</button>
-								</p>
-								<section id="emergencyBreathing" class="d-none">
-									<div id="breathing-button"></div>
-									<p class="text-center">
-										Quando se sentir mais calma clique no botão abaixo
-									</p>
-									<p class="text-center">
-										<a href="file:///home/zilliana/Documentos/estudos/projeto-mulher-maravilha/mulher-maravilha/pages/reconect.html" id="" class="btn btn-primary btn-lg">Vamos Refletir</a>
-									</p>
-								</section>
-							</article>
+        <!-- Work -->
+        <article id="work" class="panel">
+          <header>
+            <h2>Uma nova mulher</h2>
+          </header>
+          <p>
+            Abaixo há algumas iniciativas para trabalhar o desenvolvimento do
+            seu amor próprio, você pode seguir a sequência ou ir direto para
+            algum item específico.
+          </p>
+          <section>
+            <div class="row">
+              <div class="col-4 col-6-medium col-12-small">
+                <a
+                  href="file:///C:/Users/Zilli/Documents/GEST%C3%83O%20EMPRESARIAL%20-%20FATEC/2%20CICLO/PI-3/mulher-maravilha/pages/contato-com-a-crianca.html"
+                  class="image fit"
+                >
+                  <span>Fale com sua criança</span>
+                  <img src="images/pic01.jpg" alt="" />
+                </a>
+              </div>
+              <div class="col-4 col-6-medium col-12-small">
+                <a
+                  href="file:///C:/Users/Zilli/Documents/GEST%C3%83O%20EMPRESARIAL%20-%20FATEC/2%20CICLO/PI-3/mulher-maravilha/pages/aprenda-com-seus-erros.html"
+                  class="image fit"
+                >
+                  <span>Aprenda com seus erros</span>
+                  <img src="images/pic02.jpg" alt="" />
+                </a>
+              </div>
+              <div class="col-4 col-6-medium col-12-small">
+                <a href="#" class="image fit">
+                  <span>Sinta-se linda</span>
+                  <img src="images/pic03.jpg" alt="" />
+                </a>
+              </div>
+              <p class="text-center">
+                <a href="javascriptvoid:(0);"
+                  >Assine um plano para acessar mais conteúdos</a
+                >
+              </p>
+            </div>
+          </section>
+        </article>
 
-						<!-- Work -->
-						<article id="work" class="panel">
-							<header>
-								<h2>Uma nova mulher</h2>
-							</header>
-							<p>
-								Abaixo há algumas iniciativas para trabalhar o desenvolvimento do seu amor próprio, você pode seguir a sequência ou ir direto para algum item específico.
-							</p>
-							<section>
-								<div class="row">
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit">
-											<span>Tenha critério</span>
-											<img src="images/pic01.jpg" alt="">
-										</a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-									</div>
-									<div class="col-4 col-6-medium col-12-small">
-										<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-									</div>
-								</div>
-							</section>
-						</article>
+        <!-- Contact -->
+        <!--article id="contact" class="panel">
+          <header>
+            <h2>Contact Me</h2>
+          </header>
+          <form action="#" method="post">
+            <div>
+              <div class="row">
+                <div class="col-6 col-12-medium">
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-medium">
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="col-12">
+                  <input type="text" name="subject" placeholder="Subject" />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <input type="submit" value="Send Message" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </article-->
+      </div>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+      <!-- Footer -->
+      <div id="footer">
+        <ul class="copyright">
+          <li></li>
+        </ul>
+      </div>
+    </div>
 
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li></li>
-						</ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/custom.js"></script>
-		<script type="text/javascript">
-			let dadosUsuario = JSON.parse('[{"nome":"Ana", "sobrenome":"Mendes"}, {"nome":"Clara", "sobrenome":"Lopes"}]');
-			nomeUsuario = (dadosUsuario['nome','0']);
-			document.getElementById("nome").innerHTML  = nomeUsuario.nome;
-		</script>
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript">
+      let dadosUsuario = JSON.parse(
+        '[{"nome":"Ana", "sobrenome":"Mendes"}, {"nome":"Clara", "sobrenome":"Lopes"}]'
+      );
+      nomeUsuario = dadosUsuario[("nome", "0")];
+      document.getElementById("nome").innerHTML = nomeUsuario.nome;
+    </script>
+  </body>
 </html>
